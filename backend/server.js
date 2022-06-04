@@ -30,6 +30,7 @@ app.use('/api/auth', require('./routes/authenticationRoutes'));
 app.use('/api/student', require('./routes/studentRoutes'));
 app.use('/api/staff', require('./routes/staffRoutes'));
 app.use('/api/admin', require('./routes/adminRoutes'));
+app.get("/test",(req,res)=>{res.send(" Test")});
 
 //give feedback for the topics
 //app.use("/api/sendFeedback", require("./routes/evaluationTopics"));
